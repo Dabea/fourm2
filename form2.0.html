@@ -10,19 +10,14 @@
         <meta property="og:type" content="website" />
         <meta property="og:description" content="This is my simple address form version 2.0 to show off what I have done so far " />
         <meta property="og:url" content="https//:formaddress2.0"  />
-        
     </head>
-
     <body>
-
         <!-- Skip Links-->
         <div class="skip">
             <a href="#headder" accesskey="1">Skip to site Navigation</a>
-            <a href="#form" accesskey="1">Skip to site Address Form</a>
-            <a href="#footer" accesskey="1">Skip to site Footer</a>
-        
+            <a href="#form" accesskey="2">Skip to site Address Form</a>
+            <a href="#footer" accesskey="3">Skip to site Footer</a>
         </div>
-
         <!-- Header  with Nav-->
         <div class="bannerw" role="banner">
             <div class="banner" id="headder" role="navigation">
@@ -40,53 +35,47 @@
                 <h1>This is an Address Form </h1>
                 <p>Pleas put in your information in the form </p>
             </div>
-
-
         </div>
         <!-- Address form-->
         <div>
-
+            <h2>Address Form Inputs</h2>
             <div id="form" class="wrapper" >
                 <form>
-                    <div><label>First Name:</label><input type="text" id="first_id" /></div>
-                    <div><label>Last Name:</label><input type="text" id="last_id" /></div>
-                    <div><label>Address:</label><input type="text" id="address_id" /></div>
-                    <div><label>Apt:</label><input type="text" id="apt_id" /></div>
-                    <div><label> State: </label> <select>
-                            <option value="AK">AK</option><option value="AL">AL</option><option value="AR">AR</option><option value="AZ">AZ</option><option value="CA">CA</option><option value="CO">CO</option><option value="CT">CT</option><option value="DC">DC</option><option value="DE">DE</option><option value="FL">FL</option><option value="HI">HI</option><option value="IA">IA</option><option value="ID">ID</option><option value="IL">IL</option><option value="IN">IN</option><option value="KS">KS</option><option value="KY">KY</option><option value="LA">LA</option><option value="MA">MA</option><option value="MD">MD</option><option value="ME">ME</option><option value="MI">MI</option><option value="MN">MN</option><option value="MO">MO</option> <option value="MS">MS</option><option value="MT">MT</option><option value="NC">NC</option><option value="ND">ND</option><option value="NE">NE</option><option value="NH">NH</option><option value="NJ">NJ</option><option value="NM">NM</option><option value="NV">NV</option><option value="NY">NY</option><option value="OH">OH</option><option value="OK">OK</option><option value="OR">OR</option><option value="PA">PA</option><option value="RI">RI</option><option value="SC">SC</option><option value="SD">SD</option><option value="TN">TN</option><option value="TX">TX</option><option value="UT">UT</option><option value="VA">VA</option><option value="VT">VT</option><option value="WA">WA</option><option value="WI">WI</option><option value="WV">WV</option><option value="WY">WY</option>
-                        </select>
+                    <div class="row1">
+                        <div class="row1c" ><label>First Name:</label><input type="text" id="first_id" /></div>
+                        <div class="row1c" ><label>Address:</label><input type="text" id="address_id" /></div>
+                        <div class="row1c" ><label>Email:</label><input type="text" id="email_id" /> </div>
                     </div>
-
-                    <div><label>Zip:</label><input class="zip" type="text" id="zip_id" /></div>
-                    <div><label>Email:</label><input type="text" id="email_id" /> </div>
+                    <div class="row2">
+                        <div><label>Last Name:</label><input type="text" id="last_id" /></div>
+                        <div><label>Apt:</label><input type="text" id="apt_id" maxlength="3" /></div>
+                        <div><label> State: </label> <select>
+                                <option value="AK">AK</option><option value="AL">AL</option><option value="AR">AR</option><option value="AZ">AZ</option><option value="CA">CA</option><option value="CO">CO</option><option value="CT">CT</option><option value="DC">DC</option><option value="DE">DE</option><option value="FL">FL</option><option value="HI">HI</option><option value="IA">IA</option><option value="ID">ID</option><option value="IL">IL</option><option value="IN">IN</option><option value="KS">KS</option><option value="KY">KY</option><option value="LA">LA</option><option value="MA">MA</option><option value="MD">MD</option><option value="ME">ME</option><option value="MI">MI</option><option value="MN">MN</option><option value="MO">MO</option> <option value="MS">MS</option><option value="MT">MT</option><option value="NC">NC</option><option value="ND">ND</option><option value="NE">NE</option><option value="NH">NH</option><option value="NJ">NJ</option><option value="NM">NM</option><option value="NV">NV</option><option value="NY">NY</option><option value="OH">OH</option><option value="OK">OK</option><option value="OR">OR</option><option value="PA">PA</option><option value="RI">RI</option><option value="SC">SC</option><option value="SD">SD</option><option value="TN">TN</option><option value="TX">TX</option><option value="UT">UT</option><option value="VA">VA</option><option value="VT">VT</option><option value="WA">WA</option><option value="WI">WI</option><option value="WV">WV</option><option value="WY">WY</option>
+                            </select>
+                        </div>    
+                        <div><label>Zip:</label><input class="zip" type="text" id="zip_id" /></div>
+                    </div>
                     <div class="clear">  </div>
                     <div class="phone" >
                         <label> Phone Number: </label> <input class="number1" type="text" id="phone_id1" maxlength="3" />
                         <input class="number1" type="text" id="phone_id2" maxlength="3"/>
                         <input class="number1" type="text" id="phone_id3" maxlength="4" />
                     </div>
-                    <div >
+                    <div class="phone" >
                         <label>Cell Number:</label><input class="number1" type="text" id="cell_id1" maxlength="3" />
                         <input class="number1" type="text" id="cell_id2" maxlength="3" />
-                        <input class="number1" type="text" id="cell_id3" maxlength="4" />
-                        
+                        <input class="number1" type="text" id="cell_id3" maxlength="4" /> 
                     </div>
-                    
                     <div class="checkbox"><input type="checkbox" id="agree_id" /> <small>by checking this if you agree to all terms</small> </div>
-                 
                     <div class="button" > 
                         <input  type="submit" value="submit" id="submit_button" /> 
                         <input type="reset" value="clear" id="clear_button" />
                     </div>
                 </form>
-
-
             </div>
-
         </div>
-
-
         <!-- Adress info displayed-->
+        <h2>Address Info</h2>
          <table>
             <tr>
                 <td>John Smith </td>
@@ -123,11 +112,11 @@
          </table>
         <!-- Footer-->
         <footer>
-            <div class="footer" id="footer" >
-                
-            
+            <div class="footerw">
+                <div class="footer" id="footer" >
+                    
+                </div>
             </div>
-        
         </footer>
 
     </body>
