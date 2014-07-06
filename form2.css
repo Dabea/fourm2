@@ -3,6 +3,7 @@ body{
     background-color:#3B3738;
     padding:0px;
     margin:0px;
+    
 }
     /*=================== Header =========== */
  #headder{
@@ -13,94 +14,132 @@ body{
     background-color:#4A96AD;
  }
  
- /* IE */
+ /* IE They place a border around link images */
  a img{
     border:0px;
  }
  
 a{
     text-decoration:none;
-    color:#66CCCC;
+    color:#000;
+    
     
 }
-.banner{
-    margin-top:0px;
+a:hover{
+    text-decoration:none;
+    color:#FFF;
+    
+}
+/* Dose two Things 1. Makes the Link the whole area for the tab in the banner 2. Witch in-turn makes the whole area change with the background color change */
+ul li a {
+  margin:0px;
+  display:block;
+  text-decoration:none;
+  padding:5px;
+  padding-bottom:13px;
+  
+}
+
+.bannerw{
+    top:0px;
+    margin:0px;
+    padding:0px;
+}
+.bannerul{
     margin-left:60%;
-    padding:5px;
     background-color:#4A96AD;
-}
-.bannerli{
     
+}
+
+.bannerli{
     list-style:none;
-    display:inline;
+    float:left;
+    top:0px;
+} 
+ .bannerli:hover{
+    background-color:#333;
+    list-style:none;
+    display:block;
+    cursor:pointer;
+    
 } 
  
- 
+
+ /* Makes the Text centred next to an image */
 .icon{
     vertical-align:middle;
+    padding-right:5px;
+    
 }
 
     /*=================== Main Body =========== */
+/*  This makes only 1px show of the skip link area witch also matches the background effectively making it invisible but is still accessible with for screen readers */
 .skip{
-    position: absolute;
+    margin-top:0px;
+    position:absolute;
     clip: rect(1px 1px 1px 1px); 
     clip: rect(1px, 1px, 1px, 1px);
+    padding:0px;
+    margin:0px;
+    
 }
 #instructions{
     margin-left:30%;
+    color:#EEE;
 }
+
+        /*=================== Adress Fourm =========== */
+/* this is the wrapper for the forum */
 .wrapper{
     margin-left:30%;
     padding:10px;
-    width:600px;
+    width:540px;
     border:1px solid #444;
     overflow:hidden;
     color:#FFF;
-}   
-        /*=================== Adress Fourm =========== */
+}           
+
 form div {
     margin:3px;
     float:left;
-    
-    
 }  
+/* Makes the phone nubmer  and cell number line up with in there rows  (could add Phone to the row but but is help line out cell in a nice place) */
 .phone{
    margin-left:30px;
     float:left;
-    
 } 
+/* Makes a nice space between the text and the input box */
 div label{
     padding:3px;
 }
+/* This is done so the button dose not float up next to email or next to the last name  */  /* Now its to center after adding IE fix for text after check box */
 .button{
-    margin-left:90px;
+    margin-left:200px;
     margin-right:150px;
-    
-    
 }
 .buttonie{
     display:inline;
     float:left;
 }
-
+/* *IE* This makes the text not stack vertically in IE */
 .checkbox{
+    width:250px;
     clear:both;
     display:block;
 }   
 .zip{
     width:40px;
 }
-#apt_id{
+#apt{
     width:30px;
 }
+/*This Makes all the content line up nicely in the first row */
 .row1c{
     float:right;
 }
-
+/* changes the text box size for the phone number inputs */
 .number1{
-    width:30px;
-    
-    
+    width:30px; 
 }
 .row1{
     width:250px;
@@ -108,7 +147,7 @@ div label{
 }
 .row2{
     margin-left:20px;
-    width:275px;
+    width:255px;
     height:96px;
 }
 
@@ -132,18 +171,21 @@ td{
     
     
 }
-
+/*=================== Footer =========== */
 .footer{
     height:60px;
+    bottom:0px;
+    
     position:absolute;
     width:100%;
-    bottom:0px;
     background-color:#111;
+    overflow:hidden;
     
 }
 footerw{
     height:100%;
     position:relative;
+    clear:both;
 }
 h2{
     display:none;
