@@ -1,125 +1,119 @@
-<!Doctype html>
+<!Doctype HTML>
 <html lang="en">
-    <head>
-        <title>Form Address 2.0</title>
-        <link rel="stylesheet" href="form2.css" />
-        <meta charset="UTF-8"/>
-        <meta name="description" content="This is my simple address form version 2.0 to show off what I have done so far " />
-        <meta name="keywords" content=" Address, HTML, Button, forms, Learning, css, XML" />
-        <meta property="og:title" content="Form Address 2.0" />
-        <meta property="og:type" content="website" />
-        <meta property="og:description" content="This is my simple address form version 2.0 to show off what I have done so far " />
-        <meta property="og:url" content="https//:formaddress2.0"  />
-    </head>
-    <body>
-        <!-- Skip Links-->
-        <div class="skip">
-            <a href="#headder" accesskey="1">Skip to site Navigation</a>
-            <a href="#form" accesskey="2">Skip to site Address Form</a>
-            <a href="#footer" accesskey="3">Skip to site Footer</a>
-        </div>
-        <!-- Header  with Nav-->
-        <div class="bannerw" role="banner">
-            <div class="banner" id="headder" role="navigation">
-                <ul class="bannerul" >
-                    <li class="bannerli"> <a href="#"><img class="icon" src="http://www.defaulticon.com/sites/default/files/styles/icon-front-page-32x32-preview/public/field/image/home.png?itok=4tougUBV" alt="home">home</a> </li>
-                    <li class="bannerli"> <a href="#"><img class="icon" src="https://cdn2.iconfinder.com/data/icons/pittogrammi/142/88-32.png" alt="contact">contact </a></li>
-                    <li class="bannerli"> <a href="#"><img class="icon" src="https://cdn2.iconfinder.com/data/icons/pittogrammi/142/17-32.png" alt="blog">blog </a> </li>
-                    <li class="bannerli"> <a href="#"><img class="icon" src="https://cdn2.iconfinder.com/data/icons/pittogrammi/142/93-32.png" alt="location">location </a> </li>
-                </ul>
-            </div> 
-        </div>
-        <!-- Main content block-->
-        <div id="main">
-            <div id="instructions" role="main" > 
-                <h1>This is an Address Form </h1>
-                <p>Pleas put in your information in the form </p>
-            </div>
-        </div>
-        <!-- Address form-->
-        <div role="form">
-            <h2>Address Form Inputs</h2>
-            <div id="form" class="wrapper" >
-                <form>
-                    <div class="row1">
-                        <div class="row1c" ><label for="first" >First Name:</label><input type="text" id="first" aria-required="true" /></div>
-                        <div class="row1c" ><label for="address" >Address:</label><input type="text" id="address" aria-required="true" /></div>
-                        <div class="row1c" ><label for="email" >Email:</label><input type="text" id="email" aria-required="true" /> </div>
-                    </div>
-                    <div class="row2">
-                        <div><label for="last" >Last Name:</label><input type="text" id="last" aria-required="true" /></div>
-                        <div><label for="apt" >Apt:</label><input type="text" id="apt" maxlength="3" aria-required="true" /></div>
-                        <div><label> State: </label> <select>
-                                <option value="AK">AK</option><option value="AL">AL</option><option value="AR">AR</option><option value="AZ">AZ</option><option value="CA">CA</option><option value="CO">CO</option><option value="CT">CT</option><option value="DC">DC</option><option value="DE">DE</option><option value="FL">FL</option><option value="HI">HI</option><option value="IA">IA</option><option value="ID">ID</option><option value="IL">IL</option><option value="IN">IN</option><option value="KS">KS</option><option value="KY">KY</option><option value="LA">LA</option><option value="MA">MA</option><option value="MD">MD</option><option value="ME">ME</option><option value="MI">MI</option><option value="MN">MN</option><option value="MO">MO</option> <option value="MS">MS</option><option value="MT">MT</option><option value="NC">NC</option><option value="ND">ND</option><option value="NE">NE</option><option value="NH">NH</option><option value="NJ">NJ</option><option value="NM">NM</option><option value="NV">NV</option><option value="NY">NY</option><option value="OH">OH</option><option value="OK">OK</option><option value="OR">OR</option><option value="PA">PA</option><option value="RI">RI</option><option value="SC">SC</option><option value="SD">SD</option><option value="TN">TN</option><option value="TX">TX</option><option value="UT">UT</option><option value="VA">VA</option><option value="VT">VT</option><option value="WA">WA</option><option value="WI">WI</option><option value="WV">WV</option><option value="WY">WY</option>
-                            </select>
-                        </div>    
-                        <div><label for="zip">Zip:</label><input class="zip" type="text" id="zip" aria-required="true" /></div>
-                    </div>
-                    <div class="clear">  </div>
-                    <div class="phone" >
-                        <label for="phone_id1" > Phone Number: </label> <input class="number1" type="text" id="phone_id1" maxlength="3" aria-required="false" />
-                        <input class="number1" type="text" id="phone_id2" maxlength="3" aria-required="false" />
-                        <input class="number1" type="text" id="phone_id3" maxlength="4" aria-required="false" />
-                    </div>
-                    <div class="phone" >
-                        <label for="cell_id1" >Cell Number:</label><input class="number1" type="text" id="cell_id1" maxlength="3" aria-required="false" />
-                        <input class="number1" type="text" id="cell_id2" maxlength="3" aria-required="false" />
-                        <input class="number1" type="text" id="cell_id3" maxlength="4" aria-required="false" /> 
-                    </div>
-                    <div class="checkbox"><input type="checkbox" id="agree_id" /> <small>by checking this if you agree to all terms</small> </div>
-                    <div class="button" > 
-                        <input  type="submit" value="submit" id="submit_button" /> 
-                        <input type="reset" value="clear" id="clear_button" />
-                    </div>
-                </form>
-            </div>
-        </div>
-        <!-- Adress info displayed-->
-        <h2>Address Info</h2>
-         <table role="directory"> 
-            <tr>
-                <td>John Smith </td>
-                <td>Jane Doe </td>
-                <td>Mega Man</td>
-            </tr>
-            <tr>
-                <td>Phone:7634831245 </td>
-                <td>Phone:7634579445 </td>
-                <td>Phone:7634641297</td>
-            </tr>
-            <tr>
-                <td>Cell:7634831245 </td>
-                <td>Cell:7634579445 </td>
-                <td>Cell:7634641297</td>
-            </tr>
-            <tr>
-                <td>JohnSmith@gmail.com </td>
-                <td>JaneDoe@gmail.com </td>
-                <td>MegaMan@gmail.com</td>
-            </tr>
-             <tr>
-                <td>760 Rainbow Road Apt2 </td>
-                <td>960 Avalon Rd </td>
-                <td>1 Maverick Headquarters Apt 1668 </td>
-            </tr>
-            <tr>
-                <td>Mario Kart City WA 44856 </td>
-                <td>Death Star City NY  554568</td>
-                <td>New Nevada NV 55468</td> 
+<head>
+    <title>Blocks</title>
+    <meta charset="UFT-8" />
+    <meta name="description" content="This is just a site layout" />
+    <meta name="keywords" content="This is just a site layout" />
+    <meta property="og:title" content="Blocks" />
+    <meta property="og:description" content="This is a site layout" />
+    <meta property="og:type"  content="website" />
+    <meta property="og:url" content="https://blocks.html" />
+    <link rel="stylesheet" href="blocks.css" />
+</head>
+<body>
 
-            </tr>
-         
-         </table>
-        <!-- Footer-->
-        <footer>
-            <div class="footerw">
-                <div class="footer" id="footer" >
-                    
-                </div>
-            </div>
-        </footer>
+    <!-- Skip Links -->
+    <div class="skip" >
+        <a href="#navigation" accesskey="n"> Skip to Navigation(Alt+N)</a>
+        <a href="#main" accesskey="n"> Skip to main (Alt+M)</a>
+        <a href="#navigation" accesskey="n"> Skip to Footer (AltL)</a>
+    </div>
+    <!-- Skip Links End -->
 
-    </body>
-
-
+    <!-- Masthead -->
+    <div class="masthead">
+        <div class="masthead-hd">
+                <ul class="masthead_hd-ul" ><!--
+                    --><li class="masthead_hd-li"><a href="#">Home</a> </li><!--
+                    --><li class="masthead_hd-li"><a href="#">About</a> </li><!--
+                    --><li class="masthead_hd-li"><a href="#">Location</a> </li><!--
+                    --><li class="masthead_hd-li"><a href="#">Other</a> </li><!--
+             --></ul>
+        </div>
+        <div class="masthead-bd" >
+        </div>
+    </div>
+    <!-- Masthead end -->
+    
+    <!-- Blocks Wrapper -->
+    <h1>Main Content aka the Blocks</h1>
+    <div class="blocks_4up" > 
+        <div class="block_4up ">
+            <span>Block </span>
+        </div>
+        
+        <div class="block_4up block_black">
+            <span>Block </span>
+        </div>
+        
+        <div class="block_4up block_green">
+            <span>Block </span>
+        </div>
+        
+        <div class="block_4up block_white">
+            <span>Block </span>
+        </div>
+        
+        <div class="block_4up block_red">
+            <span>Block </span>
+        </div>
+        
+        <div class="block_4up block_orange">
+            <span>Block </span>
+        </div>
+        
+        <div class="block_4up block_blue">
+            <span>Block </span>
+        </div>
+        
+        <div class="block_4up block_purple">
+            <span>Block </span>
+        </div>
+        
+        <div class="block_4up block_purple">
+            <span>Block </span>
+        </div>
+        
+        <div class="block_4up block_yellow ">
+            <span>Block </span>
+        </div>
+        
+        <div class="block_4up block_orange">
+            <span>Block </span>
+        </div>
+        
+        <div class="block_4up">
+            <span>Block </span>
+        </div>
+        
+        <div class="block_4up block_green">
+            <span>Block </span>
+        </div>
+        
+        <div class="block_4up block_blue">
+            <span>Block </span>
+        </div>
+        
+        <div class="block_4up">
+            <span>Block </span>
+        </div>
+        
+        <div class="block_4up block_black">
+            <span>Block </span>
+        </div>
+    </div>
+    <!-- Blocks Wrapper end -->
+    
+    
+    <!-- Footer -->
+    <h1> Me</h1>
+    <footer class="footer" itemscope itemtype="http://schema.org/Person">
+        <span itemprop="name" >Abraham Anderson</span>
+    </footer>
+    <!-- Footer End -->
+    
+    
+</body>
+    
 </html>
