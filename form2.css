@@ -1,18 +1,20 @@
-body{
-    
-    background-color:#3B3738;
+/**
+* ===Reset===  
+*/
+body, ul , li header{
     padding:0px;
     margin:0px;
     
 }
-    /*=================== Header =========== */
- #headder{
-    top:0px;
+body{
+     padding:0px;
     margin:0px;
-    padding:0px;
-    height:50px;
-    background-color:#4A96AD;
- }
+    background-color:#3B3738;
+   
+    
+}
+    /*=================== Header =========== */
+ 
  
  /* IE They place a border around link images */
  a img{
@@ -32,29 +34,31 @@ a:hover{
 }
 /* Dose two Things 1. Makes the Link the whole area for the tab in the banner 2. Witch in-turn makes the whole area change with the background color change */
 ul li a {
-  margin:0px;
+  margin-top:0px;
   display:block;
   text-decoration:none;
-  padding:5px;
-  padding-bottom:13px;
+  padding:0px;
+  padding-bottom:0px;
   
 }
 
 .bannerw{
+  
     top:0px;
     margin:0px;
     padding:0px;
+    height:45px;
+    background-color:#4A96AD;
 }
 .bannerul{
     margin-left:60%;
-    background-color:#4A96AD;
-    
 }
 
 .bannerli{
     list-style:none;
     float:left;
-    top:0px;
+    padding:5px;
+    padding-bottom:8px;
 } 
  .bannerli:hover{
     background-color:#333;
@@ -173,13 +177,11 @@ td{
 }
 /*=================== Footer =========== */
 .footer{
-    height:60px;
-    bottom:0px;
-    
-    position:absolute;
+    margin-top:100px;
+    height:63px;
     width:100%;
     background-color:#111;
-    overflow:hidden;
+    
     
 }
 footerw{
